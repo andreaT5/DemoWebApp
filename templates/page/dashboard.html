@@ -1,0 +1,22 @@
+<section>
+    <div class="container">
+        <h4 class="sub-title">WebApp Dashboard</h4>
+        <div class="row py-5">
+            <input type="file" id="inputFile" style="display: none;">
+            <div class="col-lg-3 col-sm-3 col-md-3"><button type="button" class="btn btn-primary" onclick="onFileSelect()">Input</button></div>
+            <div class="col-lg-3 col-sm-3 col-md-3"><button type="button" class="btn btn-primary" onclick="onFileProcess()">Process</button></div>
+            <div class="col-lg-3 col-sm-3 col-md-3"><a href="{{url_for('index.chart')}}"><button type="button" class="btn btn-primary">Next</button></a></div>
+        </div>
+        <div class="row py-5">
+            <div class="col-lg-6 col-sm-6 col-md-6">
+                <div class="row">Source</div>
+                <div class="row"><label for="" id="lblFileContent"></label></div>                
+            </div>
+            <div class="col-lg-6 col-sm-6 col-md-6">
+                <div class="row">Result</div>
+                <div class="row"><label for="" id="lblFileResult"></label></div>
+                
+            </div>
+        </div>
+    </div>
+</section>
